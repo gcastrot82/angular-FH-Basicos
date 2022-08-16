@@ -1,0 +1,27 @@
+<h1>Bienvenido Heroe</h1>
+
+
+<h2>El nombre del heroe es {{nombre}}</h2>
+
+<!-- Description list -->
+<!-- Table description -->
+<dl>
+  <td>Nombre:</td>
+  <dd>{{nombre}}</dd>
+
+  <td>Edad:</td>
+  <dd>{{edad}}</dd>
+
+
+  <td>Funcion</td>
+  <dd>{{obtenerNombre()}}</dd>
+
+  <td>Capitalizado</td>
+  <!-- <dd>{{nombre.toUpperCase()}}</dd> -->
+  <dd>{{nombreCapitalizado}}</dd>
+
+</dl>
+
+<button (click)="cambiarNombre()">Cambiar Heroe</button>
+
+<button (click)="cambiarEdad()">Cambiar Edad</button>
